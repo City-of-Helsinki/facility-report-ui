@@ -3,17 +3,33 @@ require('styles/App.scss');
 
 import React from 'react';
 
-class AppComponent extends React.Component {
+export const DashBoard = (props) => {
+  return <p>DashBoard</p>;
+}
+
+export const Tree = (props) => {
+  return <p>Tree</p>;
+}
+
+export const FacilityStatus = (props) => {
+  return <p>FacilityStatus</p>;
+}
+
+export class App extends React.Component {
   render() {
     return (
       <div className="index">
-            test
+          <div className="navigation-bar">
+              <p>Fixed navigation bar</p>
+          </div>
+          <div className="page-contents">
+              {this.props.children}
+          </div>
       </div>
     );
   }
 }
 
-AppComponent.defaultProps = {
+App.defaultProps = {
 };
 
-export default AppComponent;
