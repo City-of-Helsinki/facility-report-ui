@@ -11,7 +11,10 @@ ReactDOM.render(
       <Route path="/" component={components.App} >
           <Route path="/dashboard" component={components.DashBoard} />
           <Route path="/browse" component={components.Tree} />
+          <Route path="/browse/lvl2" component={components.TreeBranch} />
           <Route path="/status" component={components.FacilityStatus} />
+          <Route path="/status/change" component={components.FacilityStatusChange} />
+          <Route path="/outbox/" component={components.Outbox} />
       </Route>
   </Router>, document.getElementById('app')
 );
