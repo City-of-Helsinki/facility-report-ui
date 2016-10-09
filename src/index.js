@@ -1,7 +1,7 @@
 import 'core-js/fn/object/assign';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import * as components from './components/Main';
 import 'bootstrap-sass';
 
@@ -9,7 +9,7 @@ import 'bootstrap-sass';
 ReactDOM.render(
   <Router history={browserHistory}>
       <Route path="/" component={components.App} >
-          <Route path="/dashboard" component={components.DashBoard} />
+          <IndexRoute component={components.DashBoard} />
           <Route path="/browse" component={components.Tree} />
           <Route path="/browse/lvl2" component={components.TreeBranch} />
           <Route path="/status" component={components.FacilityStatus} />
