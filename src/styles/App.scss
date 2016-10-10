@@ -51,18 +51,34 @@ body {
 
 .condition {
   margin-right: $padding-base-horizontal;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  border-radius: 50%;
+  color: #fff;
 }
 
 .condition-ok {
   //@extend .fa;
   //@extend .fa-meh-o;
-  color: $brand-success;
+  background: $brand-success;
 }
 
 .condition-nosnow {
   //@extend .fa;
   //@extend .fa-tint;
-  color: $brand-danger;
+  background: $brand-danger;
+}
+
+.condition-status {
+ font-size: 1.333em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.condition-updated {
+  color: $gray-light;
 }
 
 .action-icon {
